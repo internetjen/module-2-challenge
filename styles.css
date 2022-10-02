@@ -1,3 +1,11 @@
+/* CSS browser reset*/
+body, ul, li, h1, h2, a{
+    margin:0;
+    padding:0;
+    font-family: arial;
+}
+
+/* Header & Page title*/
 header{
     background-color: black;
     padding: 10px;
@@ -15,11 +23,14 @@ header h1{
     display: inline-block;
 }
 
+/* Banner image and welcome message*/
 .banner{
     position:relative;
+    top: 40px;
 }
 .banner img{
     max-width: 100%;
+
 }
 .banner .greeting{
     position:absolute;
@@ -30,5 +41,27 @@ header h1{
 }
 .banner h2{
     font-size:34px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Navigation*/
+nav {
+    background-color: #c69adc;
+    padding: 20px;
+    position:sticky;
+    top:73px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px; 
+}
+nav li a{
+    color: aquamarine;
+    text-decoration: none;
+}
+
