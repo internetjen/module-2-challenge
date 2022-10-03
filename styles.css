@@ -1,5 +1,5 @@
 /* CSS browser reset*/
-body, ul, li, h1, h2, h3, a{
+body, ul, li, h1, h2, a{
     margin:0;
     padding:0;
     font-family: arial;
@@ -16,6 +16,7 @@ header{
     top: 0;
     left: 0;
 }
+
 header h1{
     color: white;
     border: 2px solid white;
@@ -28,65 +29,121 @@ header h1{
     position:relative;
     top: 40px;
 }
+
 .banner img{
     max-width: 100%;
-
 }
+
 .banner .greeting{
     position:absolute;
-    left: 20%;
-    top: 40%;
+    left: 41%;
+    top: 35%;
     color: white;
     padding: 10px;
 }
+
 .banner h2{
-    font-size:34px;
+    font-size:54px;
 }
 
 /* Navigation*/
 nav {
-    background-color: #c69adc;
+    background-color: #eeeaea;
     padding: 20px;
     position:sticky;
     top:73px;
 }
+
 nav ul{
     white-space: nowrap;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 nav li{
     width: 25%;
     display: inline-block;
-    font-size: 24px; 
+    font-size: 20px; 
+    text-align: center;
 }
+
 nav li a{
-    color: aquamarine;
+    color: rgb(15, 9, 9);
     text-decoration: none;
 }
 
-main{
-    max-width:100%;
-    width: 1200px;
-    margin: 80px auto;
-    padding: 0 40px;
-    box-sizing: border-box;
+/* footer*/
+footer {
+    clear: both;
+    background-color: #eeeaea;
+    width: 100%;
+    color: rgb(15, 9, 9);
+    padding: 20px 0;
 }
 
-div h2{
-
-}
-div p{
-
-}
-
-footer{
+.footer-content {
+    align-items: center;
     text-align: center;
-    line-height: 30%;
-    font-size: 15px;
 }
+
+.footer-content h3 {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 1;
+    font-size: 14px;
+}
+.footer-bottom {
+    align-items: center;
+    text-align: center;
+    
+}
+.footer-bottom p {
+    font-size: 10px;
+    font weight: 400px;
+    line-height: 0px;
+    padding: 0 0;
+}
+
 
  /* pseudo classes */
 
 
- /* flexbox */
+ /* Layout separating sidebar from content */
+ main {
+    margin: 0 auto;    /* This centers the page in modern browsers */
+    max-width: 100%;      /* This sets our total page width */
+    padding: 100px 0;
+}
+
+#content-placement {
+    float: right;      /* This causes the content to move to the right */
+    width: 70%;      /* We need to set the width whenever we float an element */
+  }
+
+#sidebar-placement {
+    float: left;       /* This causes the sidebar to move to the left */
+    width: 25%;      /* We need to set the width whenever we float an element */
+    margin-left: 3%;
+}
+
+   /* sidebar & content style*/
+#sidebar-style-about {
+    padding: 100px 0;
+}
+
+#sidebar-style-work {
+    padding: 100px 0;
+}
+
+#sidebar-style-contact {
+    padding: 100px 0;
+}
+
+p {
+    text-align: center;
+    padding: 50px 10px;  
+}
