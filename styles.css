@@ -73,10 +73,10 @@ main{
     box-sizing: border-box;
 }
 
-article h2{
+div h2{
 
 }
-article p{
+div p{
 
 }
 
@@ -85,3 +85,8 @@ footer{
     line-height: 30%;
     font-size: 15px;
 }
+
+ /* pseudo classes */
+
+
+ /* flexbox */
