@@ -135,7 +135,7 @@ p {
 /* about section */
 .container-about {
     display: flex;
-    height: 400px;
+    height: 700px;
 }
 .container-about div {
     flex: 1;
@@ -145,9 +145,14 @@ p {
     text-align: center;
 }
 
-img {
-    max-width: 50%;
-    max-height: 50%;
+.recent-photo {
+  float: left;
+  margin: 4px;
+  max-width:530px;
+  max-height:205px;
+  width: auto;
+  height: auto;
+}
 }
 
 #content-style-about ul {
@@ -165,7 +170,7 @@ img {
 /* work section */
 .container-work {
     display: flex;
-    height: 400px;
+    height: 700px;
 }
 .container-work div {
     flex: 1;
@@ -178,7 +183,7 @@ img {
 /* contact me section */
 .container-contact {
     display: flex;
-    height: 400px;
+    height: 700px;
 }
 .container-contact div {
     flex: 1;
