@@ -72,59 +72,6 @@ nav li a{
 }
 
 
- /* pseudo classes */
-
- /* Layout separating sidebar from content */
-/*8 main {
-    margin-top: 50px;
-    margin-right: 40px;
-    margin-left: 10px;
-    padding: 30px 0;
-}
-
-/* main content sections */
-/* p { 
-    height: 400px;
-    max-width: 30%;
-    max-height: 10%;
-    display: inline;
-
-} */
-
-/* about section
-.container-about {
-    display: flex;
-    height: 550px;
-    flex: 1;
-    justify-content: center;
-}
-
-.recent-photo {
-  float: left;
-  margin: 4px;
-  max-width:530px;
-  max-height:205px;
-  width: auto;
-  height: auto;
-}
-
-/* work section */
-/* .container-work {
-    display: flex;
-    height: 550px;
-    flex: 1;
-    justify-content: center;
-} */
-
-/* contact me section */
-/* .container-contact {
-    display: flex;
-    flex:1;
-    height: 550px;
-    justify-content: center;
-} */
-/* 
-
 /* main content layout */
 .wrapper {
     display: grid;
@@ -132,58 +79,89 @@ nav li a{
     grid-template-rows: auto;
     grid-template-columns: 1fr 3fr;
 }
+
+/* about me section title */
  .one {
-    background: red;
+    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
+/* about me section content */
 .two {
-    background: blue;
+    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    flex-wrap: wrap;
+}
+
+.two p{
+    padding: 40px;
 }
 
 .recent-photo {
     float: left;
     max-width: 300px;
-  }
+}
 
+/* work section title */
 .three {
-    background: violet;
+    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-
 }
+
+/* work section content */
 .four {
-    background: yellow;
+    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 34px;
 }
 
+.work-photo-big {
+    max-width: 100%;
+    display: inline-flex;
+}
+
+.work-photo {
+    width: 300px;
+    max-width: 100%;
+    display: inline-flex;
+}
+
+/* contact me section title */
 .five {
-    background: cornflowerblue;
+    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
+/* contact me section content */
 .six {
-    background: green;
+    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
+
+/* pseudo classes */
+
+
+
 
 /* footer*/
 footer {
