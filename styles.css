@@ -82,7 +82,6 @@ nav li a{
 
 /* about me section title */
  .one {
-    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +91,6 @@ nav li a{
 
 /* about me section content */
 .two {
-    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +109,6 @@ nav li a{
 
 /* work section title */
 .three {
-    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +139,6 @@ nav li a{
 
 /* contact me section title */
 .five {
-    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +147,6 @@ nav li a{
 
 /* contact me section content */
 .six {
-    background: #eeeaea;
     display: flex;
     align-items: center;
     justify-content: center;
