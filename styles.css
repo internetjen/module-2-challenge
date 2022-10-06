@@ -22,6 +22,7 @@ header h1{
     border: 2px solid white;
     padding: 6px 12px;
     display: inline-block;
+    width: 100%;
 }
 
 
@@ -29,6 +30,7 @@ header h1{
 .banner{
     position:relative;
     top: 58px;
+    width: 100%;
 }
 
 .banner img{
@@ -51,6 +53,8 @@ nav {
     padding: 20px;
     position:sticky;
     top:73px;
+    width: 100;
+    z-index: 1; /* stays on top of all content even when scrolling*/
 }
 
 nav ul{
@@ -124,39 +128,91 @@ nav li a{
     padding: 40px;
     flex-wrap: wrap;
     gap: 34px;
+    position: relative;
+    font-family: Arial;
 }
 
-.work-photo-big {
-    max-width: 100%;
-    display: inline-flex;
+.four img {
+    filter: grayscale(80%); /* Adds grayscale filter to work images*/
+    align-items: flex-end;
+    justify-content: flex-end;
+    max-width: 300px;
 }
 
-.work-photo {
-    width: 300px;
-    max-width: 100%;
-    display: inline-flex;
+.four img:hover {
+    filter: none; /* Removes grayscale filter when hovering over work images */
+    transition-duration: .5s ; /* Navigation*/
+}
+
+
+/* caption images */
+.caption {
+    position: absolute;
+    max-width: 200px;
+    margin: 0;
+    padding: 0.5rem;
+    word-break: break-word;
+    font-size: 1.25rem;
+    background-color: rgba(0,0,0,.3);
+    color: #f2f2f2;
+}
+
+.box-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #333333;
+    color: #d9d9d9;
+  }
+
+.box-flex-bottom {
+    align-items: flex-end;
+}
+.box-caption {
+    position: absolute;
+    max-width: 200px;
+    margin: 0;
+    padding: .5rem;
+    word-break: break-word;
+    font-size: 1.25rem;
+    background-color: rgba(0,0,0,.3);
+    color: #f2f2f2;
+}
+
+.box-img-main {
+    width: 100%;
 }
 
 /* contact me section title */
+
 .five {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 100px;
+    
 }
 
 /* contact me section content */
 .six {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
     padding: 20px;
 }
 
-/* pseudo classes */
+.six a {
+    display: flex;
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+    color: rgb(15, 9, 9);
+    text-decoration: none;
 
-
-
+}
 
 /* footer*/
 footer {
